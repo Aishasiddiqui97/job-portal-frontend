@@ -13,7 +13,7 @@
              class="bg-white rounded border border-gray-200 overflow-hidden hover:shadow-md transition">
           <!-- Job Image -->
           <div class="aspect-video bg-gray-300">
-            <img :src="`https://via.placeholder.com/240x135/${job.color}/ffffff?text=Job`" 
+            <img :src="job.image" 
                  class="w-full h-full object-cover" alt="Job" />
           </div>
           
@@ -34,9 +34,37 @@
 
 <script setup>
 const jobs = [
-  { id: 1, title: 'Senior Designer', company: 'CompanyA', location: 'Remote', salary: '$90k', color: '4299E1' },
-  { id: 2, title: 'Developer', company: 'CompanyB', location: 'SF', salary: '$110k', color: '9F7AEA' },
-  { id: 3, title: 'Manager', company: 'CompanyC', location: 'NY', salary: '$100k', color: '48BB78' },
-  { id: 4, title: 'Analyst', company: 'CompanyD', location: 'LA', salary: '$85k', color: 'ED8936' }
+  { 
+    id: 1, 
+    title: 'Senior Designer', 
+    company: 'Creative Agency', 
+    location: 'Remote', 
+    salary: '$90k+',
+    image: 'https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=300&h=200&fit=crop'
+  },
+  { 
+    id: 2, 
+    title: 'Software Developer', 
+    company: 'Tech Company', 
+    location: 'San Francisco', 
+    salary: '$110k+',
+    image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=300&h=200&fit=crop'
+  },
+  { 
+    id: 3, 
+    title: 'Project Manager', 
+    company: 'Enterprise Corp', 
+    location: 'New York', 
+    salary: '$100k+',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&h=200&fit=crop'
+  },
+  { 
+    id: 4, 
+    title: 'Data Analyst', 
+    company: 'Analytics Co', 
+    location: 'Los Angeles', 
+    salary: '$85k+',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=200&fit=crop'
+  }
 ]
 </script>

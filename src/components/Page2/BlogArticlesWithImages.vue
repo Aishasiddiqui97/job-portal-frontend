@@ -10,7 +10,7 @@
              class="flex gap-4 border border-gray-200 rounded p-3 hover:bg-gray-50 transition">
           <!-- Large Image -->
           <div class="w-32 h-20 bg-gray-200 rounded flex-shrink-0 overflow-hidden">
-            <img :src="`https://via.placeholder.com/128x80/${article.color}/ffffff?text=Article`" 
+            <img :src="article.image" 
                  class="w-full h-full object-cover" :alt="article.title" />
           </div>
           
@@ -31,7 +31,19 @@
 
 <script setup>
 const articles = [
-  { id: 1, title: 'Career Tips for 2024', excerpt: 'Essential advice for job seekers...', date: 'May 15', color: '667EEA' },
-  { id: 2, title: 'Interview Success', excerpt: 'How to ace your interviews...', date: 'May 12', color: 'F56565' }
+  { 
+    id: 1, 
+    title: 'Top Career Tips for 2024', 
+    excerpt: 'Essential advice for job seekers to succeed in the modern workplace...', 
+    date: 'May 15, 2024',
+    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=200&h=120&fit=crop'
+  },
+  { 
+    id: 2, 
+    title: 'Interview Success Guide', 
+    excerpt: 'Learn how to ace your interviews with these proven strategies...', 
+    date: 'May 12, 2024',
+    image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200&h=120&fit=crop'
+  }
 ]
 </script>

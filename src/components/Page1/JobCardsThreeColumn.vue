@@ -13,7 +13,7 @@
              class="bg-white border border-gray-200 rounded p-3 hover:shadow-md transition">
           <!-- Image -->
           <div class="aspect-video bg-gray-200 rounded mb-2 overflow-hidden">
-            <img :src="`https://via.placeholder.com/300x180/${job.color}/ffffff?text=${job.title}`" 
+            <img :src="job.image" 
                  class="w-full h-full object-cover" :alt="job.title" />
           </div>
           
@@ -33,8 +33,32 @@
 
 <script setup>
 const jobs = [
-  { id: 1, title: 'UI/UX Designer', company: 'TechCorp', location: 'Remote', salary: '$80k', posted: '2d ago', color: '4299E1' },
-  { id: 2, title: 'Frontend Dev', company: 'StartupXYZ', location: 'SF', salary: '$100k', posted: '1d ago', color: '9F7AEA' },
-  { id: 3, title: 'Product Manager', company: 'BigCo', location: 'NY', salary: '$120k', posted: '3d ago', color: '48BB78' }
+  { 
+    id: 1, 
+    title: 'UI/UX Designer', 
+    company: 'TechCorp', 
+    location: 'Remote', 
+    salary: '$80k - $100k', 
+    posted: '2 days ago',
+    image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=250&fit=crop'
+  },
+  { 
+    id: 2, 
+    title: 'Frontend Developer', 
+    company: 'StartupXYZ', 
+    location: 'San Francisco', 
+    salary: '$100k - $130k', 
+    posted: '1 day ago',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop'
+  },
+  { 
+    id: 3, 
+    title: 'Product Manager', 
+    company: 'BigCo', 
+    location: 'New York', 
+    salary: '$120k - $150k', 
+    posted: '3 days ago',
+    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=250&fit=crop'
+  }
 ]
 </script>
