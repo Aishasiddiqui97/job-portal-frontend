@@ -1,45 +1,38 @@
 <template>
-  <div class="min-h-screen bg-gray-50">
-    <!-- Navbar - Exact from Figma -->
+  <div class="min-h-screen bg-white">
+    <!-- Navbar -->
     <Navbar />
     
-    <!-- Main Content -->
-    <main>
-      <!-- Hero Section with Images - Figma Page 1 Top -->
-      <HeroWithImages />
-      
-      <!-- Search Bar Section -->
-      <SearchSection />
-      
-      <!-- Job Categories with Icons Grid -->
-      <CategoryGrid />
-      
-      <!-- Featured Jobs Section -->
-      <FeaturedJobsGrid />
-      
-      <!-- Recent Job Listings -->
-      <JobListings />
-      
-      <!-- Blog Articles Section -->
-      <BlogArticles />
-      
-      <!-- Company Logos -->
-      <CompanyLogos />
-    </main>
+    <!-- Page 1 Content - Jobs Without Filters -->
+    <ImageGalleryTop />
+    <CategoryIconsCircular />
+    <JobCardsThreeColumn />
+    <CategoryTagsPills />
+    <BlogArticlesList />
+    <TextContentSections />
+    
+    <!-- Page 2 Content - Desktop 137 -->
+    <FeatureBoxesTop />
+    <CategorySectionsWithIcons />
+    <JobCardsFourColumn />
+    <BlogArticlesWithImages />
     
     <!-- Footer -->
-    <Footer />
+    <FooterMultiColumn />
   </div>
 </template>
 
 <script setup>
 import Navbar from './components/Navbar.vue'
-import HeroWithImages from './components/HeroWithImages.vue'
-import SearchSection from './components/SearchSection.vue'
-import CategoryGrid from './components/CategoryGrid.vue'
-import FeaturedJobsGrid from './components/FeaturedJobsGrid.vue'
-import JobListings from './components/JobListings.vue'
-import BlogArticles from './components/BlogArticles.vue'
-import CompanyLogos from './components/CompanyLogos.vue'
-import Footer from './components/Footer.vue'
+import ImageGalleryTop from './components/Page1/ImageGalleryTop.vue'
+import CategoryIconsCircular from './components/Page1/CategoryIconsCircular.vue'
+import JobCardsThreeColumn from './components/Page1/JobCardsThreeColumn.vue'
+import CategoryTagsPills from './components/Page1/CategoryTagsPills.vue'
+import BlogArticlesList from './components/Page1/BlogArticlesList.vue'
+import TextContentSections from './components/Page1/TextContentSections.vue'
+import FeatureBoxesTop from './components/Page2/FeatureBoxesTop.vue'
+import CategorySectionsWithIcons from './components/Page2/CategorySectionsWithIcons.vue'
+import JobCardsFourColumn from './components/Page2/JobCardsFourColumn.vue'
+import BlogArticlesWithImages from './components/Page2/BlogArticlesWithImages.vue'
+import FooterMultiColumn from './components/FooterMultiColumn.vue'
 </script>
